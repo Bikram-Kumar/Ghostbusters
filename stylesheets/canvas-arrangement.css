@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Silkscreen";
+  src: url("../assets/fonts/Silkscreen/slkscr.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Silkscreen;
+  color: white;
+  position: fixed;
+}
+html {
+  overflow: hidden;
+  font-size: 20px;
+  --blue: #00020e;
+  --darkBlue: #010019;
+}
+body {
+  overflow: hidden;
+  margin: 0;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+#score-bar {
+  top: 0.2rem;
+}
+
+#cnvs {
+  background: url("../assets/background/ghostbusters-bg.gif");
+  background-size: cover;
+  border: 1px solid black;
+}
+#gameArea {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--darkBlue);
+}
+#canvasArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#startBtn {
+  font-size: 1.6rem;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+button {
+  border: 1px solid #989898;
+  background: #00000050;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#game-over{
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  width: 13rem;
+}
+
+#retry-page, #score-bar {
+  display: none;
+  font-size: 1.4rem;
+}
+
+#GHOSTBUSTERS {
+  font-size: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
